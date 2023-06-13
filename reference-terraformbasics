@@ -7,6 +7,19 @@ terraform destroy
 
 Other codes for checks
 
+terraform fmt --recursive - to check format in terraform eg file format (fmt = format) 
+terraform validate - to help check syntax 
+
+---------------------------------------------------------------------------------------------------------------------------------------
+Files types used:
+
+Main.tf - to create resources
+Providers.tf - for multiple providers declaration or for different region
+Backend.tf - is where the terraform files (state files) to be stored, define here. 
+terraform.tfvar - is where we store variables used in the other .tf files
+variables.tf - declare variable type
+
+---------------------------------------------------------------------------------------------------------------------------------------
 
 When <filename>.tf has regions and CLI has specify a different region >> outcome is <filename>.tf will replace the CLI's region.
 
