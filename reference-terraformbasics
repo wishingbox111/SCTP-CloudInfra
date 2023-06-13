@@ -1,0 +1,14 @@
+The 4 step terraform command from checks to deploy:
+
+terraform init
+terraform plan
+terraform deploy
+terraform destroy
+
+Other codes for checks
+
+
+When <filename>.tf has regions and CLI has specify a different region >> outcome is <filename>.tf will replace the CLI's region.
+
+When a resource details eg VPC name can only be retrived after terraform creates the resources, will need a OUTPUT
+
